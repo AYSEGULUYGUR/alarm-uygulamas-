@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Alarm Program</string>
+    <string name="schedule_a_job">Schedule A Job</string>
+    <string name="alarm_durdur">Alarm Durdur</string>
+    <string name="alarm_kur">Alarm Kur</string>
+    <string name="alarm_kurdun_mu">Alarmı kurdun mu?</string>
+</resources>

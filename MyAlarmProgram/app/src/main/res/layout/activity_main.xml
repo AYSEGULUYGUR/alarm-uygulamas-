@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <TimePicker
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_a_job"
+        android:onClick="scheduleJob"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+
+        android:id="@+id/stop_alarm"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+
+        android:layout_alignParentStart="true"
+
+        android:text="@string/alarm_durdur"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp" />
+
+
+    <Button
+        android:id="@+id/start_alarm"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+
+        android:layout_alignParentStart="true"
+
+        android:text="@string/alarm_kur"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tp" />
+
+    <TextView
+        android:id="@+id/update_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/alarm_kurdun_mu"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop_alarm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
